@@ -1,11 +1,11 @@
-<script>
+<script lang="ts">
+	import '../app.postcss';
 	import { browser } from '$app/environment';
 	import { page } from '$app/stores';
 	import { webVitals } from '$lib/vitals';
-	import Header from './Header.svelte';
+
 	import './styles.css';
 
-	/** @type {import('./$types').LayoutServerData} */
 	export let data;
 
 	$: if (browser && data?.analyticsId) {
@@ -18,7 +18,12 @@
 </script>
 
 <div class="app">
-	<Header />
+	<header>
+		<nav>
+			<a href="/">Home</a>
+			<a href="/about">About</a>
+		</nav>
+	</header>
 
 	<main>
 		<slot />
