@@ -42,6 +42,8 @@
 	}
 	.content {
 		width: 100%;
+		max-height: 100vh;
+		overflow-y: auto;
 	}
 	main {
 		flex: 1;
@@ -59,17 +61,6 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 12px;
 		width: 100%;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
 	}
 </style>
