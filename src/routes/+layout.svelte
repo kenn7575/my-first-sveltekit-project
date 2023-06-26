@@ -1,4 +1,7 @@
 <script lang="ts">
+	import NavSidebar from './nav-sidebar.svelte';
+	import Footer from './footer.svelte';
+
 	import '../app.postcss';
 	import { browser } from '$app/environment';
 	import { page } from '$app/stores';
@@ -19,45 +22,45 @@
 
 <div class="app">
 	<header>
-		<nav>
-			<a href="/">Home</a>
-			<a href="/about">About</a>
-		</nav>
+		<NavSidebar />
 	</header>
+	<div class="content">
+		<main>
+			<slot />
+		</main>
 
-	<main>
-		<slot />
-	</main>
-
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
+		<footer>
+			<Footer />
+		</footer>
+	</div>
 </div>
 
 <style>
 	.app {
 		display: flex;
-		flex-direction: column;
 		min-height: 100vh;
 	}
-
+	.content {
+		width: 100%;
+	}
 	main {
 		flex: 1;
 		display: flex;
 		flex-direction: column;
 		padding: 1rem;
 		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
 		box-sizing: border-box;
 	}
-
+	header {
+		height: 100%;
+	}
 	footer {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		padding: 12px;
+		width: 100%;
 	}
 
 	footer a {
