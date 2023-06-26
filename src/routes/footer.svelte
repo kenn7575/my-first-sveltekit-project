@@ -36,7 +36,7 @@
 					<FooterLink aClass="text-primary-500" liClass="mb-4" href="/strikning"
 						>strikning</FooterLink
 					>
-					<FooterLink aClass="text-primary-500" liClass="mb-4" href="/sygning">sygning</FooterLink>
+					<FooterLink aClass="text-primary-500" liClass="mb-4" href="/syning">syning</FooterLink>
 					<FooterLink aClass="text-primary-500" liClass="mb-4" href="/om">Om mig</FooterLink>
 				</FooterLinkGroup>
 			</div>

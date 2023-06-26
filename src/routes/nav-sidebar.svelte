@@ -12,7 +12,7 @@
 				</svelte:fragment>
 			</SidebarItem>
 
-			<SidebarItem label="Strikning" {spanClass}>
+			<SidebarItem href="strikning" label="Strikning" {spanClass}>
 				<svelte:fragment slot="icon">
 					<i class="fa-solid fa-ribbon" />
 				</svelte:fragment>
@@ -23,7 +23,7 @@
 					>
 				</svelte:fragment>
 			</SidebarItem>
-			<SidebarItem label="Sygning">
+			<SidebarItem href="/syning" label="Sygning">
 				<svelte:fragment slot="icon">
 					<i class="fa-solid fa-vest-patches" />
 				</svelte:fragment>
