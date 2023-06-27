@@ -13,7 +13,7 @@
 	<div class="md:flex md:justify-between">
 		<div class="mb-6 md:mb-0">
 			<FooterBrand
-				spanClass="elf-center text-2xl font-semibold whitespace-nowrap text-primary-900 dark:text-primary-100 "
+				spanClass="no-underline elf-center text-2xl font-semibold whitespace-nowrap text-primary-900 dark:text-primary-100 "
 				href="/"
 				src="https://i.pinimg.com/originals/6b/28/d7/6b28d7fb925370efd08537f2cf29be78.png"
 				alt="Logo"

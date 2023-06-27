@@ -1,11 +1,12 @@
 <script lang="ts">
-	import NavSidebar from './nav-sidebar.svelte';
+	import DefaultSidebar from './default-sidebar.svelte';
 	import Footer from './footer.svelte';
-
+	import MediaQuery from 'svelte-media-queries';
 	import '../app.postcss';
 	import { browser } from '$app/environment';
 	import { page } from '$app/stores';
 	import { webVitals } from '$lib/vitals';
+	import MobileSidebar from './mobile-sidebar.svelte';
 
 	import './styles.css';
 
@@ -21,18 +22,26 @@
 </script>
 
 <div class="app">
-	<header>
-		<NavSidebar />
-	</header>
-	<div class="content">
-		<main>
-			<slot />
-		</main>
+	<MediaQuery query="(max-width: 850px)" let:matches>
+		{#if matches}
+			<header>
+				<MobileSidebar />
+			</header>
+		{:else}
+			<header>
+				<DefaultSidebar />
+			</header>
+		{/if}
+		<div class="content">
+			<main>
+				<slot />
+			</main>
 
-		<footer>
-			<Footer />
-		</footer>
-	</div>
+			<footer>
+				<Footer />
+			</footer>
+		</div>
+	</MediaQuery>
 </div>
 
 <style>
