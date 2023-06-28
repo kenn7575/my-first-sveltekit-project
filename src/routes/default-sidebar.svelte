@@ -1,6 +1,13 @@
 <script>
 	import { Sidebar, SidebarGroup, SidebarItem, SidebarWrapper, DarkMode } from 'flowbite-svelte';
 	let spanClass = 'flex-1 ml-3 whitespace-nowrap';
+	//create event dispatcher
+	import { createEventDispatcher } from 'svelte';
+	const dispatch = createEventDispatcher();
+	function forwardId() {
+		console.log('clicked');
+		dispatch('message', 'clicked');
+	}
 </script>
 
 <Sidebar>
@@ -9,6 +16,7 @@
 	>
 		<SidebarGroup>
 			<SidebarItem
+				on:click={forwardId}
 				aClass="flex hover:no-underline items-center p-2 text-base font-normal text-primary-900 rounded-lg dark:text-white hover:bg-primary-100 dark:hover:bg-primary-700"
 				href="/"
 				label="Hjem"
@@ -19,6 +27,7 @@
 			</SidebarItem>
 
 			<SidebarItem
+				on:click={forwardId}
 				aClass="flex hover:no-underline items-center p-2 text-base font-normal text-primary-900 rounded-lg dark:text-white hover:bg-primary-100 dark:hover:bg-primary-700"
 				href="strikning"
 				label="Strikning"
@@ -35,6 +44,7 @@
 				</svelte:fragment>
 			</SidebarItem>
 			<SidebarItem
+				on:click={forwardId}
 				aClass="flex hover:no-underline items-center p-2 text-base font-normal text-primary-900 rounded-lg dark:text-white hover:bg-primary-100 dark:hover:bg-primary-700"
 				href="/syning"
 				label="Sygning"
@@ -61,6 +71,7 @@
 			</SidebarItem>
 
 			<SidebarItem
+				on:click={forwardId}
 				aClass="flex hover:no-underline items-center p-2 text-base font-normal text-primary-900 rounded-lg dark:text-white hover:bg-primary-100 dark:hover:bg-primary-700"
 				href="/om"
 				label="Om mig"

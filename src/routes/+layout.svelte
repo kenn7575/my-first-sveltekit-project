@@ -23,15 +23,13 @@
 
 <div class="app">
 	<MediaQuery query="(max-width: 850px)" let:matches>
-		{#if matches}
-			<header>
+		<header class="h-screen">
+			{#if matches}
 				<MobileSidebar />
-			</header>
-		{:else}
-			<header>
+			{:else}
 				<DefaultSidebar />
-			</header>
-		{/if}
+			{/if}
+		</header>
 		<div class="content">
 			<main>
 				<slot />
