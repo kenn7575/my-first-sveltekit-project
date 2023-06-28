@@ -14,7 +14,7 @@
 	<SidebarWrapper
 		class="h-screen flex rounded-none justify-between flex-col bg-primary-200 dark:bg-primary-900"
 	>
-		<SidebarGroup>
+		<SidebarGroup class="mt-7">
 			<SidebarItem
 				on:click={forwardId}
 				aClass="flex hover:no-underline items-center p-2 text-base font-normal text-primary-900 rounded-lg dark:text-white hover:bg-primary-100 dark:hover:bg-primary-700"

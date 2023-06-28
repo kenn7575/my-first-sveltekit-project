@@ -34,13 +34,15 @@
 	{transitionParams}
 	bind:hidden={hidden2}
 	id="sidebar2"
+	width="w-64"
 >
 	<div class="absolute -right-2 top-2 pr-6">
 		<CloseButton
 			on:click={() => (hidden2 = true)}
-			class="text-primary-500 dark:text-primary-200 hover:bg-primary-100 dark:hover:bg-primary-700 mb-4 "
+			class="hello_world text-primary-500 dark:text-primary-200 hover:bg-primary-100 dark:hover:bg-primary-700  "
 		/>
 	</div>
+
 	<DefaultSidebar
 		on:message={() => {
 			hidden2 = true;
