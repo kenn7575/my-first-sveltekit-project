@@ -12,8 +12,8 @@ dependencies:
     specifier: ^1.6.6
     version: 1.6.6
   flowbite-svelte:
-    specifier: ^0.38.5
-    version: 0.38.5(svelte@3.59.2)
+    specifier: ^0.39.2
+    version: 0.39.3(svelte@3.59.2)
   svelte-media-queries:
     specifier: ^1.5.4
     version: 1.5.4
@@ -1165,20 +1165,27 @@ packages:
     resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
     dev: true
 
-  /flowbite-svelte@0.38.5(svelte@3.59.2):
-    resolution: {integrity: sha512-U+aEpoLb7Vl35SwqJoCNxxDzmT4pGFNIgX63zp6aaXUxO0XYAyxZh1OlBLaOzZuKFd/KxTVWJW8EZwYNtoDu2g==}
+  /flowbite-svelte@0.39.3(svelte@3.59.2):
+    resolution: {integrity: sha512-7w87mcDy0E/KKqj8UgkeBY7T/m5q1YDhfXmIELZdeLf8E+80a+DpMY3+yjgxX/WYyI0QAQC2ggDECHV2o91ATA==}
     engines: {node: '>=16.0.0', npm: '>=7.0.0'}
     peerDependencies:
       svelte: ^3.55.1 || ^4.0.0
     dependencies:
       '@popperjs/core': 2.11.8
-      flowbite: 1.6.6
+      flowbite: 1.7.0
       svelte: 3.59.2
       tailwind-merge: 1.13.2
     dev: false
 
   /flowbite@1.6.6:
     resolution: {integrity: sha512-T+IaFikHELo1PBKfT/axDqhAmKQLfm/dxVch2r07TZ+IcKwkorZjzwkVuw3OslTETniRIUf2qQvEhxk3bQCaew==}
+    dependencies:
+      '@popperjs/core': 2.11.8
+      mini-svg-data-uri: 1.4.4
+    dev: false
+
+  /flowbite@1.7.0:
+    resolution: {integrity: sha512-OTTmnhRgv85Rs+mcMaVU7zB6EvRQs7BaQziyMUsZLRjW9aUpeQyqKjLmxsVMMCdr8isYPCLd6UL7X1IaSVI0WQ==}
     dependencies:
       '@popperjs/core': 2.11.8
       mini-svg-data-uri: 1.4.4
