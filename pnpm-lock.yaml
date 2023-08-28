@@ -14,6 +14,7 @@ dependencies:
   flowbite-svelte:
     specifier: ^0.39.2
     version: 0.39.3(svelte@3.59.2)
+    
   svelte-media-queries:
     specifier: ^1.5.4
     version: 1.5.4
